@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:../../Desktop/Developer-GA/MOB-DC-3/Homework/MyPlayground.playground">
+      location = "self:Week 1 Assignment.xcodeproj">
    </FileRef>
 </Workspace>

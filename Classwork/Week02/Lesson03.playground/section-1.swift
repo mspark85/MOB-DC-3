@@ -43,26 +43,47 @@ if age > 21 {
 
 // TODO: Print the first fifty multiples of seven minus one (e.g. the first three multiples are 7, 14, 21. The first three multiples minus one are 6, 13, 20)
 
+var y = 1
+var x = 0
 
-var x = 1
-var y = 7
-
-while x < 50 {
-    y*x
-    println(y)
-    ++x
+while y <= 50 {
+    x = y * 7 - 1
+    println (x)
+    y = y+1
 }
 
 
 
 // TODO: Create a constant called number
 
+var number = 6
 
 // TODO: Print whether the above number is even
 
+if number%2 == 0 {
+    println("Yes, \(number) is even")
+}
+
+
 // TODO: Print out "Hello {whatever the value of name is}, your name is {however long the string name is} characters long!. Use countElements()
 
-// TODO: Print the sum of one hundred random numbers. Use rand() to generate random numbers.
+println ("Hello \(name), your name is \(count(name)) characters long!.")
+
+
+
+// TODO: Print the sum of one hundred random numbers. Use rand() to generate random numbers
+
+
+var num = 1
+var randomN = rand()
+
+
+
+
+
+
+
+
 
 // Bonus TO DO: Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of both three and five print “FizzBuzz”.
 
