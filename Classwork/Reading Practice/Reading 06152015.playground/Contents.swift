@@ -30,10 +30,10 @@ let (diameter, color) = balloon
 println ("The ballon diamerter is \(diameter)")
 println ("The ballon color is \(color)")
 
-/*
-var 1bNeighborhoods = ["Downtown", "Bixby Knolls", "North Long Beach". "Wilmore", "California Heights"]
 
-for hood in 1bNeighborhoods {
+var b1neighbourhoods = ["Downtown", "Bixby Knolls", "North Long Beach", "Wilmore", "California Heights"]
+
+for hood in b1neighbourhoods {
     if hood == "North Long Beach" {
         println ("\(hood) is home!")
     }
@@ -41,7 +41,7 @@ for hood in 1bNeighborhoods {
         println(hood)
     }
 }
-*/
+
 
 var contacts = ["Jeff" : "201-555-6666", "Joe" : "212-555-5666"]
 
@@ -76,4 +76,20 @@ for index in 1...5 {
     println ("\(index) tims 5 is \(index*5)")
 }
 
+let numberOfLegs = ["spider": 8, "ant": 6, "cat": 4]
+for (animalName, legCount) in numberOfLegs {
+    println("\(animalName)s have \(legCount) legs")
+}
+
+for character in "Hello" {
+    println(character)
+}
+
+for var index = 0; index < 3; ++index {
+    println ("index is \(index)")
+}
+
+// initialization; condiotin; increment [ 
+//    statements
+//}
 
