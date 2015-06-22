@@ -153,6 +153,7 @@
                         <viewControllerLayoutGuide type="bottom" id="Icj-KT-1lj"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nFK-Kf-5fH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dMs-K8-OdW">
@@ -204,6 +205,7 @@
                         <viewControllerLayoutGuide type="bottom" id="S4p-uS-7T4"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bYn-yr-7pe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1cA-Kh-HZZ">

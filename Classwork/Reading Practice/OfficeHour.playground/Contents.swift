@@ -1,0 +1,6 @@
+
+class officeHours
+{
+    //Properties
+    
+}
