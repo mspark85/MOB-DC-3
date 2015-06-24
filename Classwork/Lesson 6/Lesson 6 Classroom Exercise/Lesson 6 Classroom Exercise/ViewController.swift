@@ -8,8 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController
+{
     @IBOutlet weak var nameField: UITextField!
     @IBOutlet weak var ageField: UITextField!
     @IBOutlet weak var sexField: UITextField!
@@ -19,27 +19,47 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupTextFields()
+        setupButtons()
         
+    }
+    
+    func setupTextFields() {
         nameField.placeholder = "Name"
         ageField.placeholder = "Age"
         sexField.placeholder = "Sex"
+        locationField.placeholder = "Location"
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
+        formatTextField(nameField)
+        formatTextField(ageField)
+        formatTextField(sexField)
+        formatTextField(locationField)
     }
-
+    
+    func formatTextField(textField: UITextField) {
+        textField.keyboardType = (textField == ageField) ? .NumberPad : .ASCIICapable
+        textField.textColor = (textField == sexField) ? UIColor.redColor() : UIColor.blueColor()
+    }
+    
+    
+    func setupButtons() {
+        clearButton.setTitle("Clear", forState: UIControlState.Normal)
+        submitButton.setTitle("Submit", forState: UIControlState.Normal)
+    }
+    
     
     @IBAction func submitAction(sender: UIButton) {
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "showProfiler" {
+        println("prepare for segue")
+        if segue.identifier == "showProfile" {
             let destinationVC = segue.destinationViewController as! ProfileViewController
             destinationVC.age = ageField.text
             destinationVC.name = nameField.text
-            destinationVC.sex = sexField.text
             destinationVC.location = locationField.text
+            destinationVC.sex = sexField.text
         }
     }
     
@@ -47,7 +67,8 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
+
 

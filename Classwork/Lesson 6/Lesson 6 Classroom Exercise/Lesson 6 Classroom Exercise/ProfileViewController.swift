@@ -15,20 +15,15 @@ class ProfileViewController: UIViewController
     var sex: String?
     var location: String?
     
-    @IBOutlet weak var nameField: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-    }
-
-    if let name = name {
-        nameField.text = name
+        if let name = name {
+            nameLabel.text = name
+        }
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 }
