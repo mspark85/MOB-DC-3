@@ -47,10 +47,18 @@ class ViewController: UIViewController
         submitButton.setTitle("Submit", forState: UIControlState.Normal)
     }
     
-    
-    @IBAction func submitAction(sender: UIButton) {
+    @IBAction func clearAction(sender: UIButton) {
+        nameField.text = ""
+        ageField.text = ""
+        sexField.text = ""
+        locationField.text = ""
         
     }
+    @IBAction func submitAction(sender: UIButton) {
+    }
+    
+
+    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         println("prepare for segue")
@@ -67,6 +75,7 @@ class ViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
 }
